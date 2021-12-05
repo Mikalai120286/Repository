@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="res"></p>
+    <script>
+        let colors = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
+        let color = "#";
+        for (i=0; i<6; i++) 
+            color += colors[Math.floor(Math.random()*colors.length)];
+            res.innerHTML = color;
+        document.body.style.background = color;
+    </script>
+</body>
+</html>
